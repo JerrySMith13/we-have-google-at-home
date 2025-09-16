@@ -6,3 +6,4 @@ edition = "2024"
 [dependencies]
 html_parser = "0.7.0"
 hyper = "1.7.0"
+reqwest = {version = "0.12.23", features = ["blocking"]}
