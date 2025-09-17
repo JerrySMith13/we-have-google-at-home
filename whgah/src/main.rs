@@ -7,9 +7,13 @@ fn main() {
     let url = &args[1];
 
     let all_links = site_indexing::index_site(url);
-    let links_read = all_links.read().unwrap();
-    for link in links_read.iter() {
-        println!("{link}");
+    
+    loop{
+        if let Ok(r) = all_links.try_read(){
+            for link in r.iter(){
+                println!("{}", link);
+            }
+        }
     }
 
 }
