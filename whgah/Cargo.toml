@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+anyhow = "1.0.99"
+headless_chrome = "1.0.18"
 html_parser = "0.7.0"
 hyper = "1.7.0"
 reqwest = {version = "0.12.23", features = ["blocking"]}

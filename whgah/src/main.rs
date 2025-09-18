@@ -1,6 +1,6 @@
 mod site_indexing;
 mod log;
-
+mod browser_emulation;
 fn main() {
     let args: Vec<String> = std::env::args().collect();
 
